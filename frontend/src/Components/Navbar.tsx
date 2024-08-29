@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FaChartPie } from 'react-icons/fa'
 import { FaImage } from 'react-icons/fa6'
 import { SiWindows } from 'react-icons/si'
