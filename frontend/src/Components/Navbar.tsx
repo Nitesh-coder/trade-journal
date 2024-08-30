@@ -14,9 +14,9 @@ interface onClickBGProp{
 const Navbar: React.FC<onClickBGProp> = ({homeCl,statsCl,galCl}) => {
     const navigation = useNavigate()
     const getIconSize = () => {
-      if (window.innerWidth < 640) return 15; // Small screens
-      if (window.innerWidth < 1024) return 20; // Medium screens
-      return 25; // Large screens
+      if (window.innerWidth < 640) return 20; // Small screens
+      if (window.innerWidth < 1024) return 25; // Medium screens
+      return 30; // Large screens
     };
     const iconSize = getIconSize();
   return (
