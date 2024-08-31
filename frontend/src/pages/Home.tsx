@@ -1,4 +1,6 @@
+import InputBox from "../Components/InputBox"
 import Navbar from "../Components/Navbar"
+import RowData from "../Components/RowData"
 import StatusBar from "../Components/StatusBar"
 
 const Home = () => {
@@ -8,6 +10,8 @@ const Home = () => {
         <div className=" w-full">
           <div>Build Something Useful</div>
           <StatusBar />
+          <RowData />
+          <InputBox />
         </div>
     </div>
   )
