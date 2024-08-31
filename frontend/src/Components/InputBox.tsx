@@ -36,10 +36,8 @@ const InputBox = () => {
                 <input className=" sm:w-28 w-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="number" />
               </li>
 
-
-              <li className=" flex-1 text-start">+1.2%</li>
               <li className=" flex-1 text-start">
-                <select className=" sm:w-28 w-12 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="" id="">
+                <select className=" sm:w-28 w-12 hidden sm:block border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="" id="">
                     <option value="NY">NY</option>
                     <option value="LONDON">LONDON</option>
                     <option value="ASIAN">ASIAN</option>
@@ -47,6 +45,7 @@ const InputBox = () => {
               </li>
               <li className=" hidden sm:block flex-1 text-start">123$</li>
               <li className=" hidden sm:block flex-1 text-start">Breakout</li>
+              <li>Done</li>
           </ul>
       </div>
     )

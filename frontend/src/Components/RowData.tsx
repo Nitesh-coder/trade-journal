@@ -7,11 +7,10 @@ const RowData = () => {
             <li className=" hidden sm:block flex-1 text-start sm:-ml-20">{ new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</li>
             <li className=" flex-1 text-start -ml-4 sm:-ml-0 ">XAUUSD</li>
             <li className=" flex-1 text-start ml-4 sm:ml-0 ">LONG</li>
-            <li className=" flex-1 text-start">+45</li>
             <li className=" flex-1 text-start">0.3</li>
-            
-            <li className=" flex-1 text-start">+1.2%</li>
-            <li className=" flex-1 text-start">NY</li>
+            <li className=" flex-1 text-start">+45</li>
+            <li className=" flex-1 text-start ">+1.2%</li>
+            <li className=" flex-1 text-start hidden sm:block">NY</li>
             <li className=" hidden sm:block flex-1 text-start">123$</li>
             <li className=" hidden sm:block flex-1 text-start">Breakout</li>
         </ul>

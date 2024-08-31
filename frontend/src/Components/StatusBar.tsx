@@ -7,14 +7,16 @@ const StatusBar = () => {
             <li className=" hidden sm:block flex-1 text-start sm:-ml-20">Date</li>
             <li className=" flex-1 text-start">Pair</li>
             <li className=" flex-1 text-start">Side</li>
-            <li className=" flex-1 text-start hidden sm:block">Total Pips</li>
-            <li className=" flex-1 text-start sm:hidden">Pips</li>
             <li className=" flex-1 text-start hidden sm:block">Lot Size</li>
             <li className=" flex-1 text-start sm:hidden">Lots</li>
+            <li className=" flex-1 text-start hidden sm:block">Total Pips</li>
+            <li className=" flex-1 text-start sm:hidden">Pips</li>
+            
+            
             
             <li className=" flex-1 text-start hidden sm:block">%Changes</li>
-            <li className=" flex-1 text-start sm:hidden">%</li>
-            <li className=" flex-1 text-start ">Session</li>
+            <li className=" flex-1 text-start sm:hidden">%Change</li>
+            <li className=" flex-1 text-start hidden sm:block ">Session</li>
             <li className=" hidden sm:block flex-1 text-start">PNL</li>
             <li className=" hidden sm:block flex-1 text-start">SetUp</li>
         </ul>
