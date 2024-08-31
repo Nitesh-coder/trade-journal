@@ -1,7 +1,7 @@
 
 const RowData = () => {
   return (
-    <div className="h-8 w-full bg-slate-400 text-slate-800 rounded-md sm:text-md text-sm my-1">
+    <div className="h-10 w-full bg-slate-400 text-slate-800 rounded-md sm:text-md text-sm my-1">
         <ul className=" flex justify-between items-center h-full px-1">
             <li className=" flex-1 text-start">W</li>
             <li className=" hidden sm:block flex-1 text-start">{ new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</li>

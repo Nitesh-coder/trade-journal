@@ -1,7 +1,7 @@
 
 const InputBox = () => {
     return (
-      <div className="h-8 w-full bg-blue-500 text-slate-800 rounded-md sm:text-md text-sm my-1">
+      <div className="h-10 w-full bg-blue-500 text-slate-800 rounded-md sm:text-md text-sm my-1">
           <ul className=" flex justify-between items-center h-full px-1">
             
               <li className=" flex-1 text-start">
