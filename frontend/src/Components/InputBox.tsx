@@ -2,14 +2,14 @@
 
 const InputBox = () => {
   return (
-    <div className="h-10 w-full bg-cyan-500 text-white rounded-b-md shadow-lg sm:text-md text-sm">
+    <div className="h-10 w-full bg-blue-600 text-white rounded-b-md shadow-lg sm:text-md text-sm">
       <ul className="flex justify-between items-center h-full px-2 space-x-2">
         {/* Result Selector */}
         <li className="flex-1">
           <select 
             name="result" 
             id="result" 
-            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-700 p-1"
+            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-blue-700 p-1"
           >
             <option value="W">W</option>
             <option value="L">L</option>
@@ -21,7 +21,7 @@ const InputBox = () => {
           <select 
             name="pair" 
             id="pair" 
-            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-700 p-1"
+            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-blue-700 p-1"
           >
             <option value="XAUUSD">XAUUSD</option>
             <option value="GBPJPY">GBPJPY</option>
@@ -35,7 +35,7 @@ const InputBox = () => {
           <select 
             name="action" 
             id="action" 
-            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-700 p-1"
+            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-blue-700 p-1"
           >
             <option value="BUY">BUY</option>
             <option value="SELL">SELL</option>
@@ -45,7 +45,7 @@ const InputBox = () => {
         {/* Input Fields */}
         <li className="flex-1">
           <input 
-            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-700 p-1"
+            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-blue-700 p-1"
             type="number" 
             placeholder="Lots" 
           />
@@ -53,7 +53,7 @@ const InputBox = () => {
 
         <li className="flex-1">
           <input 
-            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-700 p-1"
+            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-blue-700 p-1"
             type="number" 
             placeholder="Pips" 
           />
@@ -62,7 +62,7 @@ const InputBox = () => {
         {/* Session Selector */}
         <li className="hidden sm:flex flex-1">
           <select 
-            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-700 p-1"
+            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-blue-700 p-1"
             name="session" 
             id="session"
           >
@@ -73,13 +73,13 @@ const InputBox = () => {
         </li>
 
         {/* Additional Information */}
-        <li className="hidden sm:block flex-1 text-start">$123</li>
-        <li className="hidden sm:block flex-1 text-start">Breakout</li>
+        <li className="hidden sm:block flex-1 text-start"></li>
+        <li className="hidden sm:block flex-1 text-start"></li>
 
         {/* Done Button */}
         <li>
           <button 
-            className="bg-cyan-700 hover:bg-cyan-600 text-white font-semibold py-1 px-4 rounded-md transition duration-200"
+            className="bg-blue-800 hover:bg-blue-700 text-white font-semibold py-1 px-4 rounded-md transition duration-200"
           >
             Done
           </button>

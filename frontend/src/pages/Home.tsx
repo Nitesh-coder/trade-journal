@@ -25,8 +25,7 @@ const Home: React.FC = () => {
   return (
     <div className=" sm:flex">
         <Navbar homeCl='skyblue' galCl='#9C9C9C' statsCl='#9C9C9C' />
-        <div className=" w-full">
-          <div>Build Something Useful</div>
+        <div className=" w-full mt-1">
           <StatusBar />
           <div>
             {data.map(()=>(
