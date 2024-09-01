@@ -1,54 +1,92 @@
 
+
 const InputBox = () => {
-    return (
-      <div className="h-8 w-full bg-cyan-400 text-slate-800 rounded-b-md sm:text-md text-sm">
-          <ul className=" flex justify-between items-center h-full px-1">
-            
-              <li className=" flex-1 text-start">
-                <select name="" id="" className=" border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <option value="W">W</option>
-                    <option value="L">L</option>
-                </select>
-              </li>
+  return (
+    <div className="h-10 w-full bg-cyan-500 text-white rounded-b-md shadow-lg sm:text-md text-sm">
+      <ul className="flex justify-between items-center h-full px-2 space-x-2">
+        {/* Result Selector */}
+        <li className="flex-1">
+          <select 
+            name="result" 
+            id="result" 
+            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-700 p-1"
+          >
+            <option value="W">W</option>
+            <option value="L">L</option>
+          </select>
+        </li>
 
+        {/* Pair Selector */}
+        <li className="flex-1">
+          <select 
+            name="pair" 
+            id="pair" 
+            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-700 p-1"
+          >
+            <option value="XAUUSD">XAUUSD</option>
+            <option value="GBPJPY">GBPJPY</option>
+            <option value="NAS100">NAS100</option>
+            <option value="BTC">BTC</option>
+          </select>
+        </li>
 
-              <li className=" flex-1 text-start">
-                <select name="" id="" className=" sm:w-28 w-16 -ml-4 sm:-ml-0 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <option value="XAUUSD">XAUUSD</option>
-                    <option value="GBPJPY">GBPJPY</option>
-                    <option value="NAS100">NAS100</option>
-                    <option value="BTC">BTC</option>
-                </select>
-              </li>
+        {/* Action Selector */}
+        <li className="flex-1">
+          <select 
+            name="action" 
+            id="action" 
+            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-700 p-1"
+          >
+            <option value="BUY">BUY</option>
+            <option value="SELL">SELL</option>
+          </select>
+        </li>
 
-              <li className=" flex-1 text-start">
-                <select name="" id="" className=" sm:w-28 w-12 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <option value="BUY">BUY</option>
-                    <option value="SELL">SELL</option>
-                </select>
-              </li>
+        {/* Input Fields */}
+        <li className="flex-1">
+          <input 
+            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-700 p-1"
+            type="number" 
+            placeholder="Lots" 
+          />
+        </li>
 
-              <li className=" flex-1 text-start">
-                <input className=" sm:w-28 w-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="number" />
-              </li>
+        <li className="flex-1">
+          <input 
+            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-700 p-1"
+            type="number" 
+            placeholder="Pips" 
+          />
+        </li>
 
-              <li className=" flex-1 text-start">
-                <input className=" sm:w-28 w-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="number" />
-              </li>
+        {/* Session Selector */}
+        <li className="hidden sm:flex flex-1">
+          <select 
+            className="w-full border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-cyan-700 p-1"
+            name="session" 
+            id="session"
+          >
+            <option value="NY">NY</option>
+            <option value="LONDON">LONDON</option>
+            <option value="ASIAN">ASIAN</option>
+          </select>
+        </li>
 
-              <li className=" flex-1 text-start">
-                <select className=" sm:w-28 w-12 hidden sm:block border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" name="" id="">
-                    <option value="NY">NY</option>
-                    <option value="LONDON">LONDON</option>
-                    <option value="ASIAN">ASIAN</option>
-                </select>
-              </li>
-              <li className=" hidden sm:block flex-1 text-start">123$</li>
-              <li className=" hidden sm:block flex-1 text-start">Breakout</li>
-              <li>Done</li>
-          </ul>
-      </div>
-    )
-  }
-  
-  export default InputBox
+        {/* Additional Information */}
+        <li className="hidden sm:block flex-1 text-start">$123</li>
+        <li className="hidden sm:block flex-1 text-start">Breakout</li>
+
+        {/* Done Button */}
+        <li>
+          <button 
+            className="bg-cyan-700 hover:bg-cyan-600 text-white font-semibold py-1 px-4 rounded-md transition duration-200"
+          >
+            Done
+          </button>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default InputBox;

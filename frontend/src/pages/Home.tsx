@@ -29,10 +29,10 @@ const Home: React.FC = () => {
           <div>Build Something Useful</div>
           <StatusBar />
           <div>
-            {data.map((trade, index:number)=>(
-              <div key={index}>
+            {data.map(()=>(
+              <div>
                 {<RowData />}
-                {console.log(trade.pair)}
+                
               </div>
             ))}
           </div>
