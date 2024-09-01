@@ -30,9 +30,14 @@ const Home: React.FC = () => {
           <StatusBar />
           <div>
             {data.map(()=>(
+<<<<<<< HEAD
               <div>
                 {<RowData />}
                 
+=======
+              <div key={1}>
+                <RowData />
+>>>>>>> a1f51cd7ed56477910d31c5cc2994b0e02614ace
               </div>
             ))}
           </div>
